@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Sadiqur Rahman Touhid ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:#fff;
+    font-family:'Noto Serif Bengali',serif;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(212,175,55,.08),transparent 25%),
+        radial-gradient(circle at 80% 70%,rgba(212,175,55,.06),transparent 28%);
+    z-index:-2;
+}
+
+#stars{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:#fff;
+    border-radius:50%;
+    opacity:.5;
+    animation:twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:.15;
+        transform:scale(.7);
+    }
+    50%{
+        opacity:1;
+        transform:scale(1.5);
+    }
+}
+
+section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:70px 20px;
+    position:relative;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    text-align:center;
+}
+
+.gold{
+    color:#d4af37;
+}
+
+.small-label{
+    color:#c9b46a;
+    font-family:'Cormorant Garamond',serif;
+    letter-spacing:5px;
+    font-size:14px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+h1,h2{
+    font-family:'Cormorant Garamond',serif;
+}
+
+button{
+    border:1px solid rgba(212,175,55,.7);
+    background:rgba(212,175,55,.08);
+    color:#f4d77a;
+    padding:15px 30px;
+    border-radius:50px;
+    font-size:14px;
+    letter-spacing:2px;
+    cursor:pointer;
+    transition:.35s;
+    font-family:'Noto Serif Bengali',serif;
+}
+
+button:hover{
+    background:#d4af37;
+    color:#080808;
+    box-shadow:0 0 35px rgba(212,175,55,.3);
+    transform:translateY(-3px);
+}
+
+/* INTRO */
+
+#intro{
+    min-height:100vh;
+}
+
+.intro-box{
+    animation:fadeUp 1.5s ease forwards;
+}
+
+.crown{
+    font-size:38px;
+    color:#d4af37;
+    margin-bottom:20px;
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+.intro-box h1{
+    font-size:clamp(42px,9vw,85px);
+    font-weight:500;
+    line-height:.95;
+    margin-bottom:25px;
+}
+
+.intro-box h1 span{
+    display:block;
+    color:#d4af37;
+}
+
+.intro-name{
+    font-size:clamp(20px,4vw,30px);
+    letter-spacing:3px;
+    margin-bottom:45px;
+}
+
+.from{
+    margin-top:22px;
+    font-size:14px;
+    color:#aaa;
+}
+
+/* COMMON */
+
+.hidden{
+    display:none !important;
+}
+
+.reveal{
+    animation:fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* BIRTHDAY */
+
+#birthday{
+    background:linear-gradient(to bottom,#050505,#090806);
+}
+
+.birthday-title{
+    font-size:clamp(50px,11vw,105px);
+    line-height:.85;
+    font-weight:600;
+    color:#fff;
+}
+
+.birthday-title span{
+    display:block;
+    color:#d4af37;
+}
+
+.date{
+    margin-top:30px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:28px;
+    letter-spacing:8px;
+    color:#e7ce76;
+}
+
+.line{
+    width:100px;
+    height:1px;
+    background:#d4af37;
+    margin:35px auto;
+}
+
+/* STORY */
+
+.story-card{
+    max-width:700px;
+    margin:auto;
+    padding:45px 30px;
+    border:1px solid rgba(212,175,55,.2);
+    border-radius:25px;
+    background:rgba(255,255,255,.025);
+    box-shadow:0 20px 80px rgba(0,0,0,.4);
+}
+
+.story-date{
+    font-family:'Cormorant Garamond',serif;
+    color:#d4af37;
+    font-size:48px;
+    margin:20px 0;
+}
+
+.story-card p{
+    color:#cfcfcf;
+    line-height:2;
+    font-size:16px;
+}
+
+/* LETTER */
+
+.letter{
+    max-width:760px;
+    margin:auto;
+    text-align:left;
+    padding:45px 35px;
+    border-left:1px solid rgba(212,175,55,.5);
+    border-right:1px solid rgba(212,175,55,.15);
+    background:linear-gradient(
+        120deg,
+        rgba(212,175,55,.04),
+        transparent
+    );
+}
+
+.letter h2{
+    text-align:center;
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:35px;
+}
+
+.letter p{
+    color:#ddd;
+    font-size:16px;
+    line-height:2.1;
+    margin-bottom:20px;
+}
+
+.signature{
+    text-align:right;
+    margin-top:35px;
+    color:#d4af37;
+    font-size:20px;
+}
+
+/* LITTLE THINGS */
+
+.things{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.thing{
+    padding:35px 20px;
+    border:1px solid rgba(212,175,55,.15);
+    border-radius:20px;
+    background:rgba(255,255,255,.025);
+    transition:.4s;
+}
+
+.thing:hover{
+    transform:translateY(-8px);
+    border-color:rgba(212,175,55,.5);
+    box-shadow:0 15px 40px rgba(212,175,55,.08);
+}
+
+.thing .number{
+    color:#d4af37;
+    font-family:'Cormorant Garamond',serif;
+    font-size:24px;
+}
+
+.thing h3{
+    margin:12px 0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:25px;
+}
+
+.thing p{
+    color:#aaa;
+    line-height:1.8;
+    font-size:14px;
+}
+
+/* GIFT */
+
+.gift-section{
+    flex-direction:column;
+}
+
+.gift{
+    width:150px;
+    height:120px;
+    margin:45px auto;
+    position:relative;
+    cursor:pointer;
+    animation:giftFloat 3s infinite ease-in-out;
+}
+
+@keyframes giftFloat{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+.gift-body{
+    position:absolute;
+    bottom:0;
+    left:10px;
+    width:130px;
+    height:85px;
+    background:linear-gradient(135deg,#7c5a11,#d4af37,#8d6815);
+    border-radius:4px;
+}
+
+.gift-body::before{
+    content:"";
+    position:absolute;
+    left:53px;
+    top:0;
+    width:25px;
+    height:100%;
+    background:#f0d36a;
+}
+
+.gift-lid{
+    position:absolute;
+    top:20px;
+    left:0;
+    width:150px;
+    height:30px;
+    background:linear-gradient(135deg,#d4af37,#8d6815);
+    border-radius:5px;
+    z-index:2;
+}
+
+.gift-lid::after{
+    content:"";
+    position:absolute;
+    left:62px;
+    top:0;
+    width:25px;
+    height:30px;
+    background:#f0d36a;
+}
+
+.gift-bow{
+    position:absolute;
+    top:0;
+    left:52px;
+    width:30px;
+    height:25px;
+    border:7px solid #e8cb61;
+    border-radius:50%;
+    z-index:3;
+}
+
+/* FINAL */
+
+.final-message{
+    animation:finalGlow 2s infinite alternate;
+}
+
+.final-message h2{
+    font-size:clamp(45px,9vw,85px);
+    color:#d4af37;
+}
+
+.final-message p{
+    margin-top:25px;
+    color:#ccc;
+    font-size:17px;
+    line-height:2;
+}
+
+@keyframes finalGlow{
+    from{
+        text-shadow:0 0 5px rgba(212,175,55,.1);
+    }
+    to{
+        text-shadow:0 0 35px rgba(212,175,55,.3);
+    }
+}
+
+/* HEARTS */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    color:#d4af37;
+    font-size:18px;
+    pointer-events:none;
+    animation:heartUp linear forwards;
+    z-index:20;
+}
+
+@keyframes heartUp{
+    0%{
+        opacity:0;
+        transform:translateY(0) scale(.5) rotate(0);
+    }
+
+    15%{
+        opacity:.8;
+    }
+
+    100%{
+        opacity:0;
+        transform:translateY(-100vh) scale(1.3) rotate(25deg);
+    }
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px 15px 45px;
+    color:#666;
+    font-family:'Cormorant Garamond',serif;
+    letter-spacing:2px;
+}
+
+footer span{
+    color:#d4af37;
+}
+
+.credit{
+    margin-top:7px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:12px;
+    letter-spacing:3px;
+    color:#555;
+}
+
+.credit span{
+    color:#9b812c;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    section{
+        padding:55px 17px;
+    }
+
+    .things{
+        grid-template-columns:1fr;
+    }
+
+    .letter{
+        padding:30px 22px;
+    }
+
+    .letter p{
+        font-size:15px;
+        line-height:2;
+    }
+
+    .story-card{
+        padding:35px 20px;
+    }
+
+    .story-date{
+        font-size:38px;
+    }
+
+    .birthday-title{
+        font-size:58px;
+    }
+
+    .date{
+        font-size:20px;
+        letter-spacing:5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<!-- INTRO -->
+
+<section id="intro">
+
+    <div class="container intro-box">
+
+        <div class="crown">✦</div>
+
+        <div class="small-label">
+            A Little Surprise
+        </div>
+
+        <h1>
+            Made With
+            <span>Care & Love</span>
+        </h1>
+
+        <div class="intro-name">
+            Sadiqur Rahman Touhid
+        </div>
+
+        <button onclick="startSurprise()">
+            OPEN YOUR SURPRISE
+        </button>
+
+        <div class="from">
+            A special message from
+            <span class="gold">বটুলতা</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BIRTHDAY -->
+
+<section id="birthday" class="hidden">
+
+    <div class="container reveal">
+
+        <div class="small-label">
+            Today Is Your Day
+        </div>
+
+        <h1 class="birthday-title">
+            HAPPY
+            <span>BIRTHDAY</span>
+        </h1>
+
+        <div class="line"></div>
+
+        <div class="intro-name">
+            Sadiqur Rahman Touhid
+        </div>
+
+        <div class="date">
+            05 • OCTOBER
+        </div>
+
+        <p style="margin-top:35px;color:#aaa;">
+            আপনার জন্য তৈরি করা একটি ছোট্ট surprise...
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- STORY -->
+
+<section id="story" class="hidden">
+
+    <div class="container reveal">
+
+        <div class="small-label">
+            A Date To Remember
+        </div>
+
+        <div class="story-card">
+
+            <div style="font-size:32px;color:#d4af37;">
+                ♡
+            </div>
+
+            <div class="story-date">
+                12 MAY 2025
+            </div>
+
+            <p>
+                একটা তারিখ হয়তো ক্যালেন্ডারের অন্য
+                অনেক তারিখের মতোই সাধারণ।
+                <br><br>
+
+                কিন্তু কিছু তারিখের সাথে জড়িয়ে থাকে
+                এমন কিছু অনুভূতি, যেগুলোকে শুধু
+                একটা তারিখ দিয়ে বোঝানো যায় না।
+                <br><br>
+
+                ১২ মে ২০২৫—আমাদের গল্পের শুরু।
+                আর সেই শুরুটা আজও আমার কাছে
+                খুব সুন্দর একটা স্মৃতি।
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section id="letter" class="hidden">
+
+    <div class="container reveal">
+
+        <div class="small-label">
+            From My Heart
+        </div>
+
+        <div class="letter">
+
+            <h2>
+                Dear Touhid ❤️
+            </h2>
+
+            <p>
+                শুভ জন্মদিন, Sadiqur Rahman Touhid! 🎂
+            </p>
+
+            <p>
+                আজকের দিনটা আপনার জন্য যেমন বিশেষ,
+                আমার কাছেও দিনটা তেমনই একটু বেশি
+                special। কারণ আজকের দিনেই এমন একজন
+                মানুষ পৃথিবীতে এসেছিলেন, যিনি আমার
+                জীবনের গল্পের একটা সুন্দর অংশ হয়ে উঠেছেন।
+            </p>
+
+            <p>
+                ১২ মে ২০২৫—একটা তারিখ, যেটা হয়তো
+                সবার কাছে সাধারণ একটা দিন। কিন্তু আমার
+                কাছে এই তারিখটার একটা আলাদা অর্থ আছে।
+                কারণ এই দিন থেকেই আমাদের গল্পটা শুরু হয়েছিল।
+            </p>
+
+            <p>
+                আজ আপনার জন্মদিনে আমি শুধু আপনাকে
+                “Happy Birthday” বলতে চাই না। আমি চাই,
+                আপনার জীবনের প্রতিটা নতুন দিন আগের
+                দিনের চেয়ে আরও সুন্দর হোক।
+            </p>
+
+            <p>
+                আপনার মুখের হাসিটা যেন কখনো হারিয়ে না যায়,
+                আপনার স্বপ্নগুলো যেন একে একে পূর্ণতা পায়,
+                আর জীবনের প্রতিটি কঠিন সময়ের পর যেন
+                আপনার জন্য আরও সুন্দর কিছু অপেক্ষা করে থাকে।
+            </p>
+
+            <p>
+                আপনি হয়তো সবসময় বুঝতে পারবেন না,
+                কিন্তু আপনার উপস্থিতি আমার কাছে অনেকটা
+                বিশেষ। আপনার সাথে কাটানো ছোট ছোট
+                মুহূর্ত, কথাগুলো, হাসি—সবকিছুরই
+                নিজের মতো একটা জায়গা আছে আমার মনে।
+            </p>
+
+            <p>
+                জীবনে যত দূরেই যান, যত ব্যস্তই হয়ে যান,
+                আমি চাই আপনি সবসময় নিজের মতো করে
+                ভালো থাকুন।
+            </p>
+
+            <p>
+                আপনার জন্য আমার শুভকামনা কোনো একটা
+                দিনের জন্য নয়—আপনার জীবনের প্রতিটা
+                সুন্দর দিনের জন্য।
+            </p>
+
+            <p>
+                আজ শুধু এটুকুই বলব—
+                আপনার জন্মদিনটা অনেক আনন্দের হোক।
+                আপনার আগামী দিনগুলো শান্তি, সাফল্য
+                আর ভালোবাসায় ভরে উঠুক।
+            </p>
+
+            <p>
+                আর আমাদের গল্পের সুন্দর স্মৃতিগুলো যেন
+                সময়ের সাথে আরও সুন্দর হয়ে থাকে। ❤️
+            </p>
+
+            <div class="signature">
+                — ভালোবাসা ও শুভকামনায়,<br>
+                <strong>বটুলতা ❤️</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LITTLE THINGS -->
+
+<section id="things" class="hidden">
+
+    <div class="container reveal">
+
+        <div class="small-label">
+            Just A Few Things
+        </div>
+
+        <h2 style="font-size:52px;">
+            For You
+        </h2>
+
+        <div class="things">
+
+            <div class="thing">
+
+                <div class="number">
+                    01
+                </div>
+
+                <h3>
+                    A Little Wish
+                </h3>
+
+                <p>
+                    আপনার প্রতিটি স্বপ্ন যেন একদিন
+                    সুন্দর বাস্তবতায় পরিণত হয়।
+                </p>
+
+            </div>
+
+
+            <div class="thing">
+
+                <div class="number">
+                    02
+                </div>
+
+                <h3>
+                    A Little Prayer
+                </h3>
+
+                <p>
+                    আপনার জীবনের প্রতিটি পথে
+                    শান্তি, সুখ আর সাফল্য থাকুক।
+                </p>
+
+            </div>
+
+
+            <div class="thing">
+
+                <div class="number">
+                    03
+                </div>
+
+                <h3>
+                    A Little Hope
+                </h3>
+
+                <p>
+                    আগামী দিনগুলো আজকের চেয়েও
+                    বেশি সুন্দর হোক।
+                </p>
+
+            </div>
+
+
+            <div class="thing">
+
+                <div class="number">
+                    04
+                </div>
+
+                <h3>
+                    A Lot Of Care
+                </h3>
+
+                <p>
+                    আর আপনার জন্য থাকুক
+                    অনেক অনেক ভালো থাকা। ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GIFT -->
+
+<section id="giftSection" class="hidden gift-section">
+
+    <div class="container reveal">
+
+        <div class="small-label">
+            One Last Surprise
+        </div>
+
+        <h2 style="font-size:55px;">
+            Something
+            <span class="gold">For You</span>
+        </h2>
+
+        <p style="color:#aaa;margin-top:20px;">
+            নিচের gift box-টা খুলুন...
+        </p>
+
+
+        <div class="gift" onclick="openGift()">
+
+            <div class="gift-bow"></div>
+
+            <div class="gift-lid"></div>
+
+            <div class="gift-body"></div>
+
+        </div>
+
+
+        <p style="color:#777;font-size:13px;">
+            TAP THE GIFT
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section id="final" class="hidden">
+
+    <div class="container final-message reveal">
+
+        <div style="font-size:40px;color:#d4af37;">
+            ✦
+        </div>
+
+        <div class="small-label">
+            From Batulota
+        </div>
+
+        <h2>
+            Happy Birthday
+        </h2>
+
+        <h1 style="
+            font-family:'Cormorant Garamond',serif;
+            font-size:clamp(30px,7vw,60px);
+            margin-top:10px;
+        ">
+            Sadiqur Rahman Touhid
+        </h1>
+
+        <div class="line"></div>
+
+        <p>
+            আপনার হাসিটা সুন্দর থাকুক,<br>
+            আপনার স্বপ্নগুলো পূর্ণ হোক,<br>
+            আর আপনার প্রতিটি আগামীকাল<br>
+            আজকের চেয়ে আরও সুন্দর হোক। ❤️
+        </p>
+
+        <p style="margin-top:35px;color:#d4af37;">
+            05 • 10 • Always Remember
+        </p>
+
+        <div style="
+            margin-top:45px;
+            font-family:'Cormorant Garamond',serif;
+            font-size:25px;
+            color:#ddd;
+        ">
+            With lots of love,<br>
+
+            <span style="color:#d4af37;">
+                বটুলতা ❤️
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    A little birthday surprise
+    <span>♥</span>
+
+    <div class="credit">
+        crafted by
+        <span>ROBIUL ISLAM</span>
+    </div>
+
+</footer>
+
+
+<script>
+
+/* CREATE STARS */
+
+const stars = document.getElementById("stars");
+
+for(let i = 0; i < 120; i++){
+
+    const star = document.createElement("div");
+
+    star.className = "star";
+
+    star.style.left =
+        Math.random() * 100 + "%";
+
+    star.style.top =
+        Math.random() * 100 + "%";
+
+    star.style.animationDelay =
+        Math.random() * 3 + "s";
+
+    star.style.animationDuration =
+        (2 + Math.random() * 4) + "s";
+
+    stars.appendChild(star);
+}
+
+
+/* SHOW SECTION */
+
+function showSection(id){
+
+    const section =
+        document.getElementById(id);
+
+    section.classList.remove("hidden");
+
+    setTimeout(() => {
+
+        section.scrollIntoView({
+            behavior:"smooth"
+        });
+
+    },100);
+}
+
+
+/* START SURPRISE */
+
+function startSurprise(){
+
+    showSection("birthday");
+
+    setTimeout(() => {
+        showSection("story");
+    },4200);
+
+    setTimeout(() => {
+        showSection("letter");
+    },8500);
+
+    setTimeout(() => {
+        showSection("things");
+    },14000);
+
+    setTimeout(() => {
+        showSection("giftSection");
+    },19000);
+
+}
+
+
+/* OPEN GIFT */
+
+function openGift(){
+
+    const gift =
+        document.querySelector(".gift");
+
+    gift.style.transform =
+        "scale(0.8)";
+
+    setTimeout(() => {
+
+        showSection("final");
+
+        createHearts();
+
+    },500);
+
+}
+
+
+/* HEARTS */
+
+function createHearts(){
+
+    for(let i = 0; i < 30; i++){
+
+        setTimeout(() => {
+
+            const heart =
+                document.createElement("div");
+
+            heart.className =
+                "heart";
+
+            heart.innerHTML =
+                Math.random() > .5
+                ? "♥"
+                : "♡";
+
+            heart.style.left =
+                Math.random() * 100 + "%";
+
+            heart.style.fontSize =
+                (12 + Math.random() * 22) + "px";
+
+            heart.style.animationDuration =
+                (4 + Math.random() * 4) + "s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            },8000);
+
+        },i * 120);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
