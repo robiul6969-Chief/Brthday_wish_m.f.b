@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For Sadiqur Rahman Touhid ❤️</title>
+<title>Happy Birthday Touhid ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap');
-
 *{
     margin:0;
     padding:0;
@@ -21,9 +22,9 @@ html{
 }
 
 body{
-    background:#050505;
+    background:#020202;
     color:#fff;
-    font-family:'Noto Serif Bengali',serif;
+    font-family:'Poppins',sans-serif;
     overflow-x:hidden;
 }
 
@@ -35,848 +36,494 @@ body::before{
     content:"";
     position:fixed;
     inset:0;
-    pointer-events:none;
-
     background:
-        radial-gradient(
-            circle at 20% 20%,
-            rgba(212,175,55,.08),
-            transparent 25%
-        ),
-        radial-gradient(
-            circle at 80% 70%,
-            rgba(212,175,55,.06),
-            transparent 28%
-        );
-
-    z-index:-2;
+        radial-gradient(circle at 50% 20%, rgba(212,175,55,.10), transparent 35%),
+        radial-gradient(circle at 20% 80%, rgba(212,175,55,.06), transparent 30%);
+    pointer-events:none;
+    z-index:-3;
 }
 
-#stars{
+.stars{
     position:fixed;
     inset:0;
-    z-index:-1;
-    overflow:hidden;
+    pointer-events:none;
+    z-index:-2;
 }
 
 .star{
     position:absolute;
-
     width:2px;
     height:2px;
-
-    background:#fff;
+    background:#d4af37;
     border-radius:50%;
-
     opacity:.5;
-
-    animation:
-        twinkle 3s
-        infinite
-        ease-in-out;
+    animation:twinkle 3s infinite ease-in-out;
 }
 
 @keyframes twinkle{
-
-    0%,100%{
-        opacity:.15;
-        transform:scale(.7);
-    }
-
-    50%{
-        opacity:1;
-        transform:scale(1.5);
-    }
-
+    0%,100%{opacity:.15;transform:scale(.7);}
+    50%{opacity:1;transform:scale(1.5);}
 }
 
-
 /* =========================
-   COMMON
+   GENERAL
 ========================= */
 
 section{
-
     min-height:100vh;
-
+    padding:80px 20px;
     display:flex;
-    justify-content:center;
     align-items:center;
-
-    padding:70px 20px;
-
+    justify-content:center;
+    text-align:center;
     position:relative;
 }
 
 .container{
-
     width:100%;
-    max-width:900px;
-
-    text-align:center;
+    max-width:850px;
+    margin:auto;
 }
 
 .gold{
     color:#d4af37;
 }
 
-.small-label{
-
-    color:#c9b46a;
-
-    font-family:
-        'Cormorant Garamond',
-        serif;
-
+.small-title{
+    font-size:12px;
     letter-spacing:5px;
-
-    font-size:14px;
-
+    color:#b9b9b9;
+    margin-bottom:20px;
     text-transform:uppercase;
-
-    margin-bottom:18px;
 }
 
-h1,
-h2{
-    font-family:
-        'Cormorant Garamond',
-        serif;
+.divider{
+    width:70px;
+    height:1px;
+    background:linear-gradient(to right,transparent,#d4af37,transparent);
+    margin:25px auto;
 }
 
+.main-title{
+    font-size:clamp(42px,9vw,90px);
+    font-weight:600;
+    line-height:1.05;
+    background:linear-gradient(
+        90deg,
+        #8d6a17,
+        #f7e7a1,
+        #d4af37,
+        #fff1a8,
+        #9b741d
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-size:250% auto;
+    animation:goldMove 5s linear infinite;
+}
+
+@keyframes goldMove{
+    to{
+        background-position:250% center;
+    }
+}
+
+.name{
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(48px,11vw,100px);
+    color:#d4af37;
+    text-shadow:0 0 25px rgba(212,175,55,.25);
+}
+
+.subtitle{
+    color:#aaa;
+    font-size:14px;
+    letter-spacing:2px;
+    margin-top:15px;
+}
 
 /* =========================
    BUTTON
 ========================= */
 
-button{
-
-    border:
-        1px solid
-        rgba(212,175,55,.7);
-
-    background:
-        rgba(212,175,55,.08);
-
-    color:#f4d77a;
-
-    padding:
-        15px 30px;
-
+.gold-btn{
+    margin-top:40px;
+    padding:15px 32px;
+    border:1px solid #d4af37;
     border-radius:50px;
-
-    font-size:14px;
-
-    letter-spacing:2px;
-
+    background:rgba(212,175,55,.05);
+    color:#d4af37;
+    font-family:'Poppins',sans-serif;
+    font-size:12px;
+    letter-spacing:3px;
     cursor:pointer;
-
-    transition:.35s;
-
-    font-family:
-        'Noto Serif Bengali',
-        serif;
+    transition:.4s ease;
+    box-shadow:0 0 20px rgba(212,175,55,.08);
 }
 
-button:hover{
-
+.gold-btn:hover{
     background:#d4af37;
-
-    color:#080808;
-
-    box-shadow:
-        0 0 35px
-        rgba(212,175,55,.3);
-
-    transform:
-        translateY(-3px);
+    color:#050505;
+    box-shadow:0 0 35px rgba(212,175,55,.35);
+    transform:translateY(-3px);
 }
-
 
 /* =========================
    INTRO
 ========================= */
 
 #intro{
-
     min-height:100vh;
 }
 
-.intro-box{
-
-    animation:
-        fadeUp 1.5s
-        ease forwards;
-}
-
-.crown{
-
+.intro-heart{
     font-size:38px;
-
     color:#d4af37;
-
-    margin-bottom:20px;
-
-    animation:
-        float 3s
-        ease-in-out
-        infinite;
-}
-
-@keyframes float{
-
-    0%,100%{
-        transform:
-            translateY(0);
-    }
-
-    50%{
-        transform:
-            translateY(-10px);
-    }
-}
-
-.intro-box h1{
-
-    font-size:
-        clamp(
-            42px,
-            9vw,
-            85px
-        );
-
-    font-weight:500;
-
-    line-height:.95;
-
     margin-bottom:25px;
+    animation:pulse 2s infinite;
 }
 
-.intro-box h1 span{
-
-    display:block;
-
-    color:#d4af37;
-}
-
-.intro-name{
-
-    font-size:
-        clamp(
-            20px,
-            4vw,
-            30px
-        );
-
-    letter-spacing:3px;
-
-    margin-bottom:45px;
+@keyframes pulse{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.15);}
 }
 
 .from{
-
-    margin-top:22px;
-
-    font-size:14px;
-
-    color:#aaa;
+    margin-top:30px;
+    color:#777;
+    font-size:12px;
+    letter-spacing:3px;
 }
-
-
-/* =========================
-   HIDDEN
-========================= */
-
-.hidden{
-    display:none;
-}
-
-
-/* =========================
-   REVEAL
-========================= */
-
-.reveal{
-
-    animation:
-        fadeUp 1s
-        ease forwards;
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:
-            translateY(35px);
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:
-            translateY(0);
-    }
-}
-
 
 /* =========================
    BIRTHDAY
 ========================= */
 
 #birthday{
-
-    background:
-        linear-gradient(
-            to bottom,
-            #050505,
-            #090806
-        );
-}
-
-.birthday-title{
-
-    font-size:
-        clamp(
-            50px,
-            11vw,
-            105px
-        );
-
-    line-height:.85;
-
-    font-weight:600;
-
-    color:#fff;
-}
-
-.birthday-title span{
-
-    display:block;
-
-    color:#d4af37;
+    border-top:1px solid rgba(212,175,55,.08);
 }
 
 .date{
-
-    margin-top:30px;
-
-    font-family:
-        'Cormorant Garamond',
-        serif;
-
-    font-size:28px;
-
-    letter-spacing:8px;
-
-    color:#e7ce76;
+    font-size:13px;
+    letter-spacing:7px;
+    color:#aaa;
+    margin-top:20px;
 }
-
-.line{
-
-    width:100px;
-
-    height:1px;
-
-    background:#d4af37;
-
-    margin:
-        35px auto;
-}
-
 
 /* =========================
    STORY
 ========================= */
 
 .story-card{
-
-    max-width:700px;
-
-    margin:auto;
-
     padding:45px 30px;
-
-    border:
-        1px solid
-        rgba(212,175,55,.2);
-
+    border:1px solid rgba(212,175,55,.18);
+    background:rgba(255,255,255,.015);
     border-radius:25px;
-
-    background:
-        rgba(255,255,255,.025);
-
-    box-shadow:
-        0 20px 80px
-        rgba(0,0,0,.4);
+    box-shadow:0 0 50px rgba(0,0,0,.3);
 }
 
 .story-date{
-
-    font-family:
-        'Cormorant Garamond',
-        serif;
-
+    font-size:45px;
     color:#d4af37;
-
-    font-size:48px;
-
-    margin:
-        20px 0;
+    font-weight:600;
+    letter-spacing:2px;
 }
 
 .story-card p{
-
-    color:#cfcfcf;
-
+    margin-top:20px;
+    color:#aaa;
     line-height:2;
-
-    font-size:16px;
+    font-size:14px;
 }
-
 
 /* =========================
    LETTER
 ========================= */
 
 .letter{
-
-    max-width:760px;
-
+    max-width:750px;
     margin:auto;
-
-    text-align:left;
-
-    padding:
-        45px 35px;
-
-    border-left:
-        1px solid
-        rgba(212,175,55,.5);
-
-    border-right:
-        1px solid
-        rgba(212,175,55,.15);
-
-    background:
-        linear-gradient(
-            120deg,
-            rgba(212,175,55,.04),
-            transparent
-        );
+    padding:45px 30px;
+    border-left:1px solid rgba(212,175,55,.3);
+    border-right:1px solid rgba(212,175,55,.3);
+    background:linear-gradient(
+        180deg,
+        rgba(212,175,55,.025),
+        transparent
+    );
 }
 
-.letter h2{
-
-    text-align:center;
-
+.letter h3{
     color:#d4af37;
-
-    font-size:42px;
-
-    margin-bottom:35px;
+    font-size:20px;
+    margin-bottom:25px;
 }
 
 .letter p{
-
-    color:#ddd;
-
-    font-size:16px;
-
+    color:#c5c5c5;
     line-height:2.1;
-
-    margin-bottom:20px;
+    font-size:14px;
+    margin-bottom:18px;
 }
 
 .signature{
-
-    text-align:right;
-
-    margin-top:35px;
-
+    margin-top:30px;
+    font-family:'Great Vibes',cursive;
     color:#d4af37;
-
-    font-size:20px;
+    font-size:38px;
 }
-
 
 /* =========================
    LITTLE THINGS
 ========================= */
 
-.things{
-
+.things-grid{
     display:grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
     gap:20px;
-
     margin-top:35px;
 }
 
 .thing{
-
-    padding:
-        35px 20px;
-
-    border:
-        1px solid
-        rgba(212,175,55,.15);
-
+    padding:35px 20px;
+    border:1px solid rgba(212,175,55,.14);
     border-radius:20px;
-
-    background:
-        rgba(255,255,255,.025);
-
+    background:rgba(255,255,255,.015);
     transition:.4s;
 }
 
 .thing:hover{
-
-    transform:
-        translateY(-8px);
-
-    border-color:
-        rgba(212,175,55,.5);
-
-    box-shadow:
-        0 15px 40px
-        rgba(212,175,55,.08);
+    transform:translateY(-5px);
+    border-color:rgba(212,175,55,.4);
+    box-shadow:0 10px 35px rgba(212,175,55,.08);
 }
 
-.thing .number{
-
+.thing-number{
     color:#d4af37;
-
-    font-family:
-        'Cormorant Garamond',
-        serif;
-
-    font-size:24px;
+    font-size:12px;
+    letter-spacing:3px;
 }
 
 .thing h3{
-
-    margin:
-        12px 0;
-
-    font-family:
-        'Cormorant Garamond',
-        serif;
-
-    font-size:25px;
+    margin:12px 0;
+    font-size:18px;
 }
 
 .thing p{
-
-    color:#aaa;
-
-    line-height:1.8;
-
-    font-size:14px;
+    color:#888;
+    font-size:13px;
+    line-height:1.7;
 }
-
 
 /* =========================
    GIFT
 ========================= */
 
-.gift-section{
+#giftSection{
+    min-height:100vh;
+}
 
-    flex-direction:column;
+.gift-area{
+    cursor:pointer;
+    display:inline-block;
+    margin-top:35px;
 }
 
 .gift{
-
-    width:150px;
-
-    height:120px;
-
-    margin:
-        45px auto;
-
     position:relative;
-
-    cursor:pointer;
-
-    animation:
-        giftFloat 3s
-        infinite
-        ease-in-out;
+    width:150px;
+    height:120px;
+    margin:auto;
+    transition:.5s ease;
+    filter:drop-shadow(0 0 20px rgba(212,175,55,.15));
 }
 
-@keyframes giftFloat{
-
-    0%,100%{
-        transform:
-            translateY(0);
-    }
-
-    50%{
-        transform:
-            translateY(-12px);
-    }
+.gift:hover{
+    transform:translateY(-10px) scale(1.04);
+    filter:drop-shadow(0 0 35px rgba(212,175,55,.4));
 }
 
-.gift-body{
-
+.gift-box{
     position:absolute;
-
     bottom:0;
-
-    left:10px;
-
-    width:130px;
-
+    left:15px;
+    width:120px;
     height:85px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #7c5a11,
-            #d4af37,
-            #8d6815
-        );
-
+    border:2px solid #d4af37;
+    background:linear-gradient(
+        135deg,
+        rgba(212,175,55,.15),
+        rgba(0,0,0,.8)
+    );
     border-radius:4px;
 }
 
-.gift-body::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:53px;
-
-    top:0;
-
-    width:25px;
-
-    height:100%;
-
-    background:#f0d36a;
-}
-
 .gift-lid{
-
     position:absolute;
-
     top:20px;
-
-    left:0;
-
-    width:150px;
-
-    height:30px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #d4af37,
-            #8d6815
-        );
-
-    border-radius:5px;
-
-    z-index:2;
-}
-
-.gift-lid::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:62px;
-
-    top:0;
-
-    width:25px;
-
-    height:30px;
-
-    background:#f0d36a;
-}
-
-.gift-bow{
-
-    position:absolute;
-
-    top:0;
-
-    left:52px;
-
-    width:30px;
-
+    left:8px;
+    width:134px;
     height:25px;
-
-    border:
-        7px solid
-        #e8cb61;
-
-    border-radius:50%;
-
-    z-index:3;
+    border:2px solid #d4af37;
+    background:#17130a;
+    border-radius:4px;
 }
 
+.ribbon-v{
+    position:absolute;
+    left:66px;
+    top:20px;
+    width:18px;
+    height:85px;
+    background:linear-gradient(
+        90deg,
+        #9b741d,
+        #f1d477,
+        #9b741d
+    );
+}
+
+.ribbon-h{
+    position:absolute;
+    left:8px;
+    top:25px;
+    width:134px;
+    height:15px;
+    background:linear-gradient(
+        90deg,
+        #9b741d,
+        #f1d477,
+        #9b741d
+    );
+}
+
+.bow{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:55px;
+    height:25px;
+}
+
+.bow::before,
+.bow::after{
+    content:"";
+    position:absolute;
+    width:30px;
+    height:20px;
+    border:2px solid #d4af37;
+    border-radius:50% 50% 10% 50%;
+}
+
+.bow::before{
+    left:0;
+    transform:rotate(25deg);
+}
+
+.bow::after{
+    right:0;
+    transform:rotate(-25deg);
+}
+
+.gift-text{
+    margin-top:30px;
+    font-size:12px;
+    letter-spacing:4px;
+    color:#d4af37;
+    animation:giftPulse 2s infinite;
+}
+
+@keyframes giftPulse{
+    0%,100%{opacity:.55;}
+    50%{opacity:1;}
+}
 
 /* =========================
    FINAL
 ========================= */
 
-.final-message{
-
-    animation:
-        finalGlow 2s
-        infinite
-        alternate;
+#final{
+    display:none;
+    overflow:hidden;
 }
 
-.final-message h2{
+#final.show{
+    display:flex;
+}
 
-    font-size:
-        clamp(
-            45px,
-            9vw,
-            85px
-        );
-
+.final-title{
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(60px,13vw,120px);
     color:#d4af37;
+    text-shadow:0 0 30px rgba(212,175,55,.25);
 }
 
-.final-message p{
+.final-name{
+    font-size:clamp(25px,6vw,48px);
+    margin-top:10px;
+    letter-spacing:3px;
+}
 
-    margin-top:25px;
-
-    color:#ccc;
-
-    font-size:17px;
-
+.final-message{
+    max-width:650px;
+    margin:30px auto 0;
+    color:#aaa;
     line-height:2;
+    font-size:14px;
 }
 
-@keyframes finalGlow{
-
-    from{
-
-        text-shadow:
-            0 0 5px
-            rgba(212,175,55,.1);
-    }
-
-    to{
-
-        text-shadow:
-            0 0 35px
-            rgba(212,175,55,.3);
-    }
+.love{
+    margin-top:35px;
+    font-family:'Great Vibes',cursive;
+    color:#d4af37;
+    font-size:38px;
 }
-
 
 /* =========================
    HEARTS
 ========================= */
 
 .heart{
-
     position:fixed;
-
     bottom:-30px;
-
     color:#d4af37;
-
-    font-size:18px;
-
+    font-size:20px;
     pointer-events:none;
-
-    animation:
-        heartUp
-        linear
-        forwards;
-
     z-index:20;
+    animation:heartFloat 5s linear forwards;
 }
 
-@keyframes heartUp{
-
+@keyframes heartFloat{
     0%{
-
+        transform:translateY(0) scale(.7);
         opacity:0;
-
-        transform:
-            translateY(0)
-            scale(.5)
-            rotate(0);
     }
-
     15%{
-        opacity:.8;
+        opacity:1;
     }
-
     100%{
-
+        transform:translateY(-110vh) rotate(360deg) scale(1.4);
         opacity:0;
-
-        transform:
-            translateY(-100vh)
-            scale(1.3)
-            rotate(25deg);
     }
 }
-
 
 /* =========================
    FOOTER
 ========================= */
 
 footer{
-
     text-align:center;
-
-    padding:
-        30px 15px
-        45px;
-
-    color:#666;
-
-    font-family:
-        'Cormorant Garamond',
-        serif;
-
-    letter-spacing:2px;
+    padding:25px 15px 35px;
+    color:#444;
+    font-size:9px;
+    letter-spacing:3px;
+    text-transform:uppercase;
 }
 
 footer span{
-
-    color:#d4af37;
+    color:#8d7225;
 }
-
-.credit{
-
-    margin-top:7px;
-
-    font-family:
-        'Cormorant Garamond',
-        serif;
-
-    font-size:12px;
-
-    letter-spacing:3px;
-
-    color:#555;
-}
-
-.credit span{
-
-    color:#9b812c;
-}
-
 
 /* =========================
    MOBILE
@@ -885,65 +532,41 @@ footer span{
 @media(max-width:600px){
 
     section{
-
-        padding:
-            55px 17px;
+        padding:70px 18px;
     }
 
-    .things{
-
-        grid-template-columns:
-            1fr;
+    .things-grid{
+        grid-template-columns:1fr;
     }
 
     .letter{
-
-        padding:
-            30px 22px;
-    }
-
-    .letter p{
-
-        font-size:15px;
-
-        line-height:2;
+        padding:35px 20px;
     }
 
     .story-card{
-
-        padding:
-            35px 20px;
+        padding:35px 20px;
     }
 
     .story-date{
-
-        font-size:38px;
+        font-size:34px;
     }
 
-    .birthday-title{
-
-        font-size:58px;
+    .gold-btn{
+        padding:14px 25px;
+        font-size:10px;
     }
 
     .date{
-
-        font-size:20px;
-
-        letter-spacing:5px;
+        letter-spacing:4px;
     }
 }
-
 </style>
 </head>
 
-
 <body>
 
-
 <!-- STAR BACKGROUND -->
-
-<div id="stars"></div>
-
+<div class="stars" id="stars"></div>
 
 
 <!-- =========================
@@ -952,150 +575,106 @@ footer span{
 
 <section id="intro">
 
-    <div class="container intro-box">
+    <div class="container">
 
-        <div class="crown">
-            ✦
+        <div class="intro-heart">✦</div>
+
+        <div class="small-title">
+            Made With Care & Love
         </div>
 
-        <div class="small-label">
-            A Little Surprise
-        </div>
-
-        <h1>
-            Made With
-            <span>Care & Love</span>
+        <h1 class="main-title">
+            A Birthday
         </h1>
 
-        <div class="intro-name">
-            Sadiqur Rahman Touhid
+        <div class="name">
+            Touhid
         </div>
 
-        <button onclick="startSurprise()">
+        <div class="divider"></div>
+
+        <p class="subtitle">
+            A little surprise, made especially for you.
+        </p>
+
+        <!-- ONLY FIRST AUTO SCROLL BUTTON -->
+        <button class="gold-btn" onclick="openSurprise()">
             OPEN YOUR SURPRISE
         </button>
 
         <div class="from">
-
-            A special message from
-
-            <span class="gold">
-                বটুলতা
-            </span>
-
+            FROM • বটুলতা
         </div>
 
     </div>
 
 </section>
-
 
 
 <!-- =========================
      BIRTHDAY
 ========================= -->
 
-<section
-    id="birthday"
-    class="hidden"
->
+<section id="birthday">
 
-    <div class="container reveal">
+    <div class="container">
 
-        <div class="small-label">
+        <div class="small-title">
             Today Is Your Day
         </div>
 
-        <h1 class="birthday-title">
-
-            HAPPY
-
-            <span>
-                BIRTHDAY
-            </span>
-
+        <h1 class="main-title">
+            HAPPY BIRTHDAY
         </h1>
 
-        <div class="line"></div>
-
-        <div class="intro-name">
+        <div class="name">
             Sadiqur Rahman Touhid
         </div>
+
+        <div class="divider"></div>
 
         <div class="date">
             05 • OCTOBER
         </div>
 
-        <p
-            style="
-                margin-top:35px;
-                color:#aaa;
-            "
-        >
-            আপনার জন্য তৈরি করা
-            একটি ছোট্ট surprise...
+        <p class="subtitle">
+            May this new year of your life be filled with peace,
+            happiness and beautiful moments.
         </p>
 
     </div>
 
 </section>
-
 
 
 <!-- =========================
      STORY
 ========================= -->
 
-<section
-    id="story"
-    class="hidden"
->
+<section id="story">
 
-    <div class="container reveal">
+    <div class="container">
 
-        <div class="small-label">
-            A Date To Remember
+        <div class="small-title">
+            Where It All Began
         </div>
 
         <div class="story-card">
-
-            <div
-                style="
-                    font-size:32px;
-                    color:#d4af37;
-                "
-            >
-                ♡
-            </div>
 
             <div class="story-date">
                 12 MAY 2025
             </div>
 
+            <div class="divider"></div>
+
             <p>
+                কিছু তারিখ ক্যালেন্ডারের পাতায় শুধু একটি দিন হয়ে থাকে,
+                আবার কিছু তারিখ মনে আলাদা একটা জায়গা করে নেয়।
+            </p>
 
-                একটা তারিখ হয়তো
-                ক্যালেন্ডারের অন্য
-                অনেক তারিখের মতোই
-                সাধারণ।
-
-                <br><br>
-
-                কিন্তু কিছু তারিখের সাথে
-                জড়িয়ে থাকে এমন কিছু
-                অনুভূতি, যেগুলোকে শুধু
-                একটা তারিখ দিয়ে
-                বোঝানো যায় না।
-
-                <br><br>
-
-                ১২ মে ২০২৫—
-                আমাদের গল্পের শুরু।
-
-                আর সেই শুরুটা আজও
-                আমার কাছে খুব সুন্দর
-                একটা স্মৃতি।
-
+            <p>
+                ১২ মে ২০২৫ — আমাদের গল্পের সেই ছোট্ট শুরু,
+                যেটা সময়ের সাথে আরও অনেক সুন্দর স্মৃতির অংশ হয়ে গেছে।
             </p>
 
         </div>
@@ -1103,137 +682,58 @@ footer span{
     </div>
 
 </section>
-
 
 
 <!-- =========================
      LETTER
 ========================= -->
 
-<section
-    id="letter"
-    class="hidden"
->
+<section id="letter">
 
-    <div class="container reveal">
+    <div class="container">
 
-        <div class="small-label">
-            From My Heart
+        <div class="small-title">
+            A Few Words For You
         </div>
 
         <div class="letter">
 
-            <h2>
+            <h3>
                 Dear Touhid ❤️
-            </h2>
+            </h3>
 
             <p>
-                শুভ জন্মদিন,
-                Sadiqur Rahman Touhid! 🎂
+                আজকের এই বিশেষ দিনে আপনাকে শুধু “শুভ জন্মদিন”
+                বললেই যেন কথাটা সম্পূর্ণ হয় না।
             </p>
 
             <p>
-                আজকের দিনটা আপনার জন্য
-                যেমন বিশেষ, আমার কাছেও
-                দিনটা তেমনই একটু বেশি
-                special। কারণ আজকের
-                দিনেই এমন একজন মানুষ
-                পৃথিবীতে এসেছিলেন,
-                যিনি আমার জীবনের গল্পের
-                একটা সুন্দর অংশ হয়ে
-                উঠেছেন।
+                আপনার জীবনের প্রতিটি নতুন দিন যেন আগের দিনের চেয়ে
+                আরও সুন্দর হয়। আপনার মুখের হাসিটা যেন সবসময়
+                এমনই থাকে, আর আপনার মনের ভালো ইচ্ছাগুলো একে একে
+                পূর্ণতা পায়।
             </p>
 
             <p>
-                ১২ মে ২০২৫—
-                একটা তারিখ, যেটা হয়তো
-                সবার কাছে সাধারণ একটা দিন।
-                কিন্তু আমার কাছে এই
-                তারিখটার একটা আলাদা
-                অর্থ আছে। কারণ এই দিন
-                থেকেই আমাদের গল্পটা
-                শুরু হয়েছিল।
+                জীবনের পথে যত স্বপ্ন আছে, যত আশা আছে,
+                সেগুলোর প্রতিটা পূরণ হোক। কঠিন সময়গুলো সহজ হয়ে
+                আসুক, আর সুন্দর সময়গুলো অনেক বেশি সময় ধরে
+                আপনার সাথে থাকুক।
             </p>
 
             <p>
-                আজ আপনার জন্মদিনে
-                আমি শুধু আপনাকে
-                “Happy Birthday”
-                বলতে চাই না।
-
-                আমি চাই, আপনার জীবনের
-                প্রতিটা নতুন দিন আগের
-                দিনের চেয়ে আরও সুন্দর হোক।
+                আর একটা কথা—সময় যতই বদলাক, আপনার জন্য আমার
+                শুভকামনাটা সবসময় সত্যি থাকবে।
             </p>
 
             <p>
-                আপনার মুখের হাসিটা যেন
-                কখনো হারিয়ে না যায়,
-                আপনার স্বপ্নগুলো যেন
-                একে একে পূর্ণতা পায়,
-                আর জীবনের প্রতিটি কঠিন
-                সময়ের পর যেন আপনার জন্য
-                আরও সুন্দর কিছু অপেক্ষা
-                করে থাকে।
-            </p>
-
-            <p>
-                আপনি হয়তো সবসময়
-                বুঝতে পারবেন না,
-                কিন্তু আপনার উপস্থিতি
-                আমার কাছে অনেকটা
-                বিশেষ।
-
-                আপনার সাথে কাটানো
-                ছোট ছোট মুহূর্ত,
-                কথাগুলো, হাসি—
-                সবকিছুরই নিজের মতো
-                একটা জায়গা আছে আমার মনে।
-            </p>
-
-            <p>
-                জীবনে যত দূরেই যান,
-                যত ব্যস্তই হয়ে যান,
-                আমি চাই আপনি সবসময়
-                নিজের মতো করে ভালো থাকুন।
-            </p>
-
-            <p>
-                আপনার জন্য আমার
-                শুভকামনা কোনো একটা
-                দিনের জন্য নয়—
-                আপনার জীবনের প্রতিটি
-                সুন্দর দিনের জন্য।
-            </p>
-
-            <p>
-                আজ শুধু এটুকুই বলব—
-
-                আপনার জন্মদিনটা
-                অনেক আনন্দের হোক।
-
-                আপনার আগামী দিনগুলো
-                শান্তি, সাফল্য আর
-                ভালোবাসায় ভরে উঠুক।
-            </p>
-
-            <p>
-                আর আমাদের গল্পের
-                সুন্দর স্মৃতিগুলো যেন
-                সময়ের সাথে আরও
-                সুন্দর হয়ে থাকে। ❤️
+                আজকের দিনটা আপনার জন্য অনেক আনন্দের হোক।
+                আপনার নতুন বছরটা হোক শান্তি, সাফল্য আর
+                অসংখ্য সুন্দর মুহূর্তে ভরা।
             </p>
 
             <div class="signature">
-
-                — ভালোবাসা ও শুভকামনায়,
-
-                <br>
-
-                <strong>
-                    বটুলতা ❤️
-                </strong>
-
+                বটুলতা ❤️
             </div>
 
         </div>
@@ -1241,285 +741,164 @@ footer span{
     </div>
 
 </section>
-
 
 
 <!-- =========================
      LITTLE THINGS
 ========================= -->
 
-<section
-    id="things"
-    class="hidden"
->
+<section id="things">
 
-    <div class="container reveal">
+    <div class="container">
 
-        <div class="small-label">
-            Just A Few Things
+        <div class="small-title">
+            Little Things
         </div>
 
-        <h2 style="font-size:52px;">
+        <h1 class="main-title">
             For You
-        </h2>
+        </h1>
 
-        <div class="things">
-
-
-            <div class="thing">
-
-                <div class="number">
-                    01
-                </div>
-
-                <h3>
-                    A Little Wish
-                </h3>
-
-                <p>
-                    আপনার প্রতিটি স্বপ্ন
-                    যেন একদিন সুন্দর
-                    বাস্তবতায় পরিণত হয়।
-                </p>
-
-            </div>
-
-
+        <div class="things-grid">
 
             <div class="thing">
-
-                <div class="number">
-                    02
-                </div>
-
-                <h3>
-                    A Little Prayer
-                </h3>
-
+                <div class="thing-number">01</div>
+                <h3>A LITTLE WISH</h3>
                 <p>
-                    আপনার জীবনের
-                    প্রতিটি পথে শান্তি,
-                    সুখ আর সাফল্য থাকুক।
+                    আপনার প্রতিটি স্বপ্ন একদিন সত্যি হয়ে উঠুক।
                 </p>
-
             </div>
-
-
 
             <div class="thing">
-
-                <div class="number">
-                    03
-                </div>
-
-                <h3>
-                    A Little Hope
-                </h3>
-
+                <div class="thing-number">02</div>
+                <h3>A LITTLE PRAYER</h3>
                 <p>
-                    আগামী দিনগুলো
-                    আজকের চেয়েও
-                    বেশি সুন্দর হোক।
+                    আল্লাহ আপনার জীবনকে শান্তি, রহমত ও
+                    বরকতে পূর্ণ করুন।
                 </p>
-
             </div>
-
-
 
             <div class="thing">
-
-                <div class="number">
-                    04
-                </div>
-
-                <h3>
-                    A Lot Of Care
-                </h3>
-
+                <div class="thing-number">03</div>
+                <h3>A LITTLE HOPE</h3>
                 <p>
-                    আর আপনার জন্য
-                    থাকুক অনেক অনেক
-                    ভালো থাকা। ❤️
+                    সামনে যত দিন আসবে, প্রতিটি দিন যেন
+                    আরও সুন্দর হয়।
                 </p>
-
             </div>
 
+            <div class="thing">
+                <div class="thing-number">04</div>
+                <h3>A LOT OF CARE</h3>
+                <p>
+                    আপনার ভালো থাকা আর হাসিটা সবসময়
+                    বিশেষ কিছু হয়ে থাকুক।
+                </p>
+            </div>
 
         </div>
 
     </div>
 
 </section>
-
 
 
 <!-- =========================
      GIFT
 ========================= -->
 
-<section
-    id="giftSection"
-    class="hidden gift-section"
->
+<section id="giftSection">
 
-    <div class="container reveal">
+    <div class="container">
 
-        <div class="small-label">
-            One Last Surprise
+        <div class="small-title">
+            One Last Thing
         </div>
 
-        <h2 style="font-size:55px;">
+        <h1 class="main-title">
+            A Little Surprise
+        </h1>
 
-            Something
-
-            <span class="gold">
-                For You
-            </span>
-
-        </h2>
-
-        <p
-            style="
-                color:#aaa;
-                margin-top:20px;
-            "
-        >
-            নিচের gift box-টা খুলুন...
+        <p class="subtitle">
+            শেষ পর্যন্ত আসার জন্য ধন্যবাদ।
+            এখন আপনার জন্য ছোট্ট একটা surprise আছে।
         </p>
 
+        <!-- ONLY SECOND AUTO SCROLL BUTTON -->
+        <div class="gift-area" onclick="openGift()">
 
-        <div
-            class="gift"
-            onclick="openGift()"
-        >
+            <div class="gift">
 
-            <div class="gift-bow"></div>
+                <div class="bow"></div>
 
-            <div class="gift-lid"></div>
+                <div class="gift-lid"></div>
 
-            <div class="gift-body"></div>
+                <div class="gift-box"></div>
+
+                <div class="ribbon-v"></div>
+
+                <div class="ribbon-h"></div>
+
+            </div>
+
+            <div class="gift-text">
+                TAP THE GIFT
+            </div>
 
         </div>
-
-
-        <p
-            style="
-                color:#777;
-                font-size:13px;
-            "
-        >
-            TAP THE GIFT
-        </p>
 
     </div>
 
 </section>
-
 
 
 <!-- =========================
      FINAL
 ========================= -->
 
-<section
-    id="final"
-    class="hidden"
->
+<section id="final">
 
-    <div class="container final-message reveal">
+    <div class="container">
 
-        <div
-            style="
-                font-size:40px;
-                color:#d4af37;
-            "
-        >
-            ✦
+        <div class="small-title">
+            Your Final Surprise
         </div>
 
-        <div class="small-label">
-            From Batulota
-        </div>
-
-        <h2>
+        <div class="final-title">
             Happy Birthday
-        </h2>
+        </div>
 
-        <h1
-            style="
-                font-family:
-                    'Cormorant Garamond',
-                    serif;
+        <div class="final-name">
+            SADIQUR RAHMAN TOUHID
+        </div>
 
-                font-size:
-                    clamp(
-                        30px,
-                        7vw,
-                        60px
-                    );
+        <div class="divider"></div>
 
-                margin-top:10px;
-            "
-        >
-            Sadiqur Rahman Touhid
-        </h1>
+        <p class="final-message">
 
-        <div class="line"></div>
+            আপনার জীবনের প্রতিটি সকাল নতুন আশার আলো নিয়ে আসুক।
+            প্রতিটি দিন আপনাকে আরও কাছাকাছি নিয়ে যাক আপনার
+            স্বপ্নগুলোর।
 
-        <p>
+            <br><br>
 
-            আপনার হাসিটা সুন্দর থাকুক,
+            সবসময় ভালো থাকুন, হাসিখুশি থাকুন,
+            আর নিজের মতো করেই সুন্দর থাকুন।
 
-            <br>
+            <br><br>
 
-            আপনার স্বপ্নগুলো পূর্ণ হোক,
-
-            <br>
-
-            আর আপনার প্রতিটি আগামীকাল
-
-            <br>
-
-            আজকের চেয়ে আরও সুন্দর হোক। ❤️
+            আপনার জন্য রইলো অনেক অনেক শুভকামনা,
+            দোয়া এবং যত্নে তৈরি এই ছোট্ট surprise। ❤️
 
         </p>
 
-        <p
-            style="
-                margin-top:35px;
-                color:#d4af37;
-            "
-        >
-            05 • 10 • Always Remember
-        </p>
-
-        <div
-            style="
-                margin-top:45px;
-                font-family:
-                    'Cormorant Garamond',
-                    serif;
-
-                font-size:25px;
-
-                color:#ddd;
-            "
-        >
-
-            With lots of love,
-
-            <br>
-
-            <span style="color:#d4af37;">
-                বটুলতা ❤️
-            </span>
-
+        <div class="love">
+            With lots of love, বটুলতা ❤️
         </div>
 
     </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1527,22 +906,8 @@ footer span{
 ========================= -->
 
 <footer>
-
-    A little birthday surprise
-    <span>♥</span>
-
-    <div class="credit">
-
-        crafted by
-
-        <span>
-            ROBIUL ISLAM
-        </span>
-
-    </div>
-
+    crafted by <span>ROBIUL ISLAM</span>
 </footer>
-
 
 
 <script>
@@ -1551,22 +916,16 @@ footer span{
    CREATE STARS
 ========================= */
 
-const stars =
-    document.getElementById("stars");
+const starsContainer = document.getElementById("stars");
 
-for(let i = 0; i < 120; i++){
+for(let i = 0; i < 100; i++){
 
-    const star =
-        document.createElement("div");
+    const star = document.createElement("div");
 
-    star.className =
-        "star";
+    star.className = "star";
 
-    star.style.left =
-        Math.random() * 100 + "%";
-
-    star.style.top =
-        Math.random() * 100 + "%";
+    star.style.left = Math.random() * 100 + "%";
+    star.style.top = Math.random() * 100 + "%";
 
     star.style.animationDelay =
         Math.random() * 3 + "s";
@@ -1574,119 +933,91 @@ for(let i = 0; i < 120; i++){
     star.style.animationDuration =
         (2 + Math.random() * 4) + "s";
 
-    stars.appendChild(star);
+    starsContainer.appendChild(star);
 }
 
 
 /* =========================
-   START SURPRISE
-   NO AUTO SCROLL
+   OPEN YOUR SURPRISE
+   ONLY THIS BUTTON AUTO SCROLLS
 ========================= */
 
-function startSurprise(){
+function openSurprise(){
 
-    /*
-       এখানে কোনো timer নেই।
-       কোনো automatic scroll নেই।
-
-       Button চাপলে শুধু
-       hidden sections দেখাবে।
-    */
-
-    document
-        .getElementById("birthday")
-        .classList.remove("hidden");
-
-    document
-        .getElementById("story")
-        .classList.remove("hidden");
-
-    document
-        .getElementById("letter")
-        .classList.remove("hidden");
-
-    document
-        .getElementById("things")
-        .classList.remove("hidden");
-
-    document
-        .getElementById("giftSection")
-        .classList.remove("hidden");
+    document.getElementById("birthday").scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+    });
 
 }
 
 
 /* =========================
-   OPEN GIFT
+   GIFT CLICK
+   SHOW FINAL + AUTO SCROLL
 ========================= */
 
 function openGift(){
 
-    const gift =
-        document.querySelector(".gift");
+    const finalSection =
+        document.getElementById("final");
 
-    gift.style.transform =
-        "scale(.8)";
+    /* Show final section */
+
+    finalSection.classList.add("show");
+
+    /* Small delay so browser can render it first */
 
     setTimeout(() => {
 
-        document
-            .getElementById("final")
-            .classList.remove("hidden");
+        finalSection.scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        });
 
-        createHearts();
+    }, 100);
 
-    },500);
+    /* Create floating hearts */
+
+    createHearts();
 
 }
 
 
 /* =========================
-   HEART ANIMATION
+   FLOATING HEARTS
 ========================= */
 
 function createHearts(){
 
-    for(
-        let i = 0;
-        i < 30;
-        i++
-    ){
+    for(let i = 0; i < 25; i++){
 
         setTimeout(() => {
 
             const heart =
                 document.createElement("div");
 
-            heart.className =
-                "heart";
+            heart.className = "heart";
 
             heart.innerHTML =
-                Math.random() > .5
-                ? "♥"
-                : "♡";
+                Math.random() > .5 ? "♥" : "✦";
 
             heart.style.left =
-                Math.random() * 100 + "%";
+                Math.random() * 100 + "vw";
 
             heart.style.fontSize =
-                (12 + Math.random() * 22)
-                + "px";
+                (12 + Math.random() * 22) + "px";
 
             heart.style.animationDuration =
-                (4 + Math.random() * 4)
-                + "s";
+                (4 + Math.random() * 3) + "s";
 
-            document.body
-                .appendChild(heart);
+            document.body.appendChild(heart);
 
             setTimeout(() => {
-
                 heart.remove();
+            }, 7000);
 
-            },8000);
-
-        },i * 120);
+        }, i * 120);
 
     }
 
